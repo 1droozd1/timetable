@@ -61,3 +61,4 @@ if os.path.exists(f'{GROUP}.ics'):
 with open(f'{GROUP}.ics', 'w', encoding='utf-8') as f:
     f.writelines(cal)
 print("Календарь успешно создан и сохранен в файл schedule.ics")
+os.remove(f"{GROUP}.json")
